@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 require('dotenv').config()
 const nodemailer = require('nodemailer');
-
+const PORT = process.env.PORT || 3000;
 
 var bodyParser = require('body-parser');
 
@@ -50,8 +50,8 @@ app.post('/mail', (req, res) => {
 
 app.use('/', express.static(path.join(__dirname, 'public')))
 
-app.listen(3000, () => {
-   console.log(`app listening on port 3000`)
+app.listen(PORT, () => {
+   console.log(`app listening on port ${PORT}`)
 });
 
 
