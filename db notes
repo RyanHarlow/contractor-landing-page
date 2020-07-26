@@ -1,0 +1,7 @@
+CREATE TABLE lead (
+   name VARCHAR(255),
+   phone VARCHAR(255),
+   email VARCHAR(255),
+   message TEXT,
+   date VARCHAR(255)
+);
